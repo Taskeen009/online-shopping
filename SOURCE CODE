@@ -1,0 +1,329 @@
+#include<iostream>
+#include<conio.h>
+#include<windows.h>
+using namespace std;
+static void login(void){
+		int i=0;string u,p;char pass[6],ch;  
+   while (1)
+   { 
+ system("cls");
+ cout<<endl<<"\n\n\n\n\n\n\n\n\t\t\t Enter Username : "; cin>>u;
+ cout<<endl<<"\t\t\t Enter Password : ";
+ for (i=0;i<=5;++i)
+ {
+     ch=getch();
+     pass[i]=ch;
+     cout<<'*';
+ }
+
+ pass[6]='\0';
+ string p="hacker";
+
+ if (u=="anonymous" && pass==p)
+ {
+    break;
+         }
+
+ else
+ {
+     system("cls");
+     cout<<"Username and password entered does not match! Please try again.";
+ }
+ getch();
+   }    
+     getch();
+}
+static void wellogcolor(void){
+	system("color 0b");
+		Sleep(0700);
+		login();
+		cout<<endl<<" Checking Username & Password";
+		Sleep(0700);
+		cout<<" .";
+		Sleep(0700);
+		cout<<" .";
+		Sleep(0700);
+		cout<<" .";
+		Sleep(0700);
+		cout<<" .";
+		Sleep(0700);
+		cout<<" .";
+		Sleep(0700);
+		cout<<" . Login Successfull."<<endl;
+		Sleep(0700);
+		cout<<" W";
+		Sleep(0700);
+		cout<<"E";
+		Sleep(0700);
+		cout<<"L";
+		Sleep(0700);
+		cout<<"C";
+		Sleep(0700);
+		cout<<"O";
+		Sleep(0700);
+		cout<<"M";
+		Sleep(0700);
+		cout<<"E";
+		Sleep(0700);
+		system("cls");
+}
+	int main (){
+		wellogcolor();
+		string a;
+		char op,loop='Y';
+		while(loop=='y'||loop=='Y'){
+		
+	cout<<endl<<"___________________________"<<endl<<endl
+	<<"                             Online Shooping System "<<
+	endl<<"                            Made By * ANONYMOUS *"<<endl<<endl<<
+	cout<<"_______________________"<<endl<<endl;
+	cout<<"                      * ----- GENERAL CATEGORIES ----- *"<<endl<<endl<<endl<<endl;
+	cout<<" Please Select one of the Following ."<<endl<<" Choose with serial number"<<endl;
+	cout<<"____________________________"<<endl<<
+		  endl<< " S.No  | Name Of Categories...                     |"<<endl<<
+		  "---------------------------------------------------|"<<endl<<
+		  endl<< "    1. |	FRUITS...                          |"<<endl<<
+		  "---------------------------------------------------|"<<endl<<
+		  endl<< "    2. |	VEGITABLES...                      |"<<endl<<
+		  "---------------------------------------------------|"<<endl<<
+		  endl<< "    3. |	GENERAL ITEMS...                   |"<<endl<<
+		  "---------------------------------------------------|"<<endl<<
+		  endl<< "    4. |	ELECTRONICS...                     |"<<endl<<
+		  "---------------------------------------------------|"<<endl<<
+		  endl<< "    5. |	MAIN HOUSEHOLDS...                 |"<<endl<<
+		  "---------------------------------------------------|"<<endl<<endl;
+		  cin>> op;
+		  cout<<endl<<"------------"<<endl;
+		  if(op=='1'){cout<<" 1.  Bananas."<<endl<<" 2.  Mangoes"<<endl<<" 3.  Apples"<<endl<<" 4.  Pine Apples."<<endl<<" 5.  Graps"<<endl;
+		  cout<<endl<<" Select Any Item To Buy.\n";
+		  cin>>op;
+		  if(op=='1'){cout<<" Bananas...            RS/= 50 ."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Bananas "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+	   }
+		  else if(op=='2'){cout<<" Mangoes...            RS/= 100."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Mangoes "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='3'){cout<<" Apples...            RS/= 150."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Apples "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+			}
+			else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		}
+		 else if(op=='4'){cout<<" Pine Apples...            RS/= 130."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Pine Apples "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		   else if(op=='5'){cout<<" Graps...            RS/= 200."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Graps "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else cout<<" please select valid Number \n Restart Application Again .\n Thanks For using :)\n"<<endl;
+		  }
+		  else if(op=='2'){cout<<" 1.  EggPlant"<<endl<<" 2.  Beetroot"<<endl<<" 3.  Green Chillies"<<endl<<" 4.  Sweetcorn"<<endl<<" 5.  Onion"<<endl;
+		  cout<<endl<<" Select Any Item To Buy.\n";
+		  cin>>op;
+		  if(op=='1'){cout<<" EggPlant...            RS/= 75."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" EggPlant "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='2'){cout<<" Beetroot...            RS/= 110."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Beetroot "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='3'){cout<<" Green Chillies...            RS/= 180."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Green Chillies "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+			}
+			else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		}
+		 else if(op=='4'){cout<<" Sweetcorn...            RS/= 300."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Sweetcorn "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		   else if(op=='5'){cout<<" Onion...            RS/= 30."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Onion "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else cout<<" please select valid Number \n Restart Application Again .\n Thanks For using :)\n"<<endl;
+		  }
+		  else if(op=='3'){cout<<" 1.  Gum Bottle"<<endl<<" 2.  Punching Machine"<<endl<<" 3.  Sealing wax"<<endl<<" 4.  Tea set"<<endl<<" 5.  Cleaning powder vim"<<endl;
+		  cout<<endl<<" Select Any Item To Buy.\n";
+		  cin>>op;
+		  if(op=='1'){cout<<" Gum Bottle...            RS/= 10."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Gum Bottle "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='2'){cout<<" Punching Machine...            RS/= 30."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Punching Machine "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='3'){cout<<" Sealing wax...            RS/= 50."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Sealing wax "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+			}
+			else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		}
+		 else if(op=='4'){cout<<" Tea set...            RS/= 300."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Tea set "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		   else if(op=='5'){cout<<" Cleaning powder vim...            RS/= 30."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Cleaning powder vim "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else cout<<" please select valid Number \n Restart Application Again .\n Thanks For using :)\n"<<endl;
+		  }
+		  else if(op=='4'){cout<<" 1.  Computer Items"<<endl<<" 2.  Mobile Items"<<endl<<" 3.  Wires"<<endl<<" 4.  Fridge/AC/Iron/Tv(ETC)"<<endl<<" 5.  All Electronics Items"<<endl;
+		  cout<<endl<<" Select Any Item To Buy.\n";
+		  cin>>op;
+		  if(op=='1'){cout<<" Computer Items...   Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Computer Items Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='2'){cout<<" Mobile Items...    Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Mobile Items Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='3'){cout<<" Wires...            RS/= 550."<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Wires "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+			}
+			else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		}
+		 else if(op=='4'){cout<<" Fridge/AC/Iron/Tv(ETC)...   Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Fridge/AC/Iron/Tv(ETC) Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		   else if(op=='5'){cout<<" All Electronics Items...     Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" All Electronics Items Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else cout<<" please select valid Number \n Restart Application Again .\n Thanks For using :)\n"<<endl;
+		  }
+		  else if(op=='5'){cout<<" 1.  Bouble Bad"<<endl<<" 2.  Kitchen Items"<<endl<<" 3.  Room Items"<<endl<<" 4.  Bathroom Items"<<endl<<" 5.  Mixed Items"<<endl;
+		  cout<<endl<<" Select Any Item To Buy.\n";
+		  cin>>op;
+		  if(op=='1'){cout<<" Bouble Bad...     RS/=6000"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Bouble Bad "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='2'){cout<<" Kitchen Items...    Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Kitchen Items Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else if(op=='3'){cout<<" Room Items...   Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Room Items Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+			}
+			else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		}
+		 else if(op=='4'){cout<<" Bathroom Items...   Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Bathroom Items Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		   else if(op=='5'){cout<<" Mixed Items...     Written in a card buy card first.   RS/=50"<<endl<<" Press 1 To buy ."<<endl;
+		  cin>>op;
+		  if (op=='1'){cout<<" Please provide me your credit card number"<<endl;
+		  cin>>a;
+		  cout<<" You Have Successfully Purchased ... "<<" Mixed Items Card "<<endl<<" Using This Credit Card = "<<a<<endl<<endl<<" Thanks For using ."<<endl;
+		  }
+		  else cout<<" You have Entered unspecified number.. ( System Will reboot)"<<endl<<endl;
+		  }
+		  else cout<<" please select valid Number \n Restart Application Again .\n Thanks For using :)\n"<<endl;
+		  }
+		  else cout<<" please select valid Number \n Restart Application Again .\n Thanks For using :)\n";
+		  cout<<endl<<" Want to Buy something Else ??"<<endl<<"  ( y/n )?"<<endl;
+		  cin>>loop;
+		  system("cls");
+	}
+		cout<<endl<<endl<<"              ** Thanks For Using ** ( Good Bye )"<<endl;
+		 system("pause");
+	}
