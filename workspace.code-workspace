@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\SortingVisualizer"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sorting"
+	}
+}
